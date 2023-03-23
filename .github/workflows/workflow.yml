@@ -2,9 +2,9 @@ on:
   workflow_dispatch:
     inputs:
       upstream_branch:
-        description: 'upstream_banch'
-        required: false
-        default: 'master'
+        description: 'upstream_branch'
+        required: true
+        # default: 'master'
 jobs:
   build-chain:
     runs-on: ubuntu-latest
