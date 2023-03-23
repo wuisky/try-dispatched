@@ -3,8 +3,8 @@ on:
     inputs:
       upstream_branch:
         description: 'upstream_branch'
-        required: true
-        # default: 'master'
+        required: false
+        default: 'master'
 jobs:
   build-chain:
     runs-on: ubuntu-latest
