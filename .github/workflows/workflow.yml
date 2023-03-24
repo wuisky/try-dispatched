@@ -19,3 +19,4 @@ jobs:
           echo "echo inside dispatch DownStream";
           echo upstream branch ${{ inputs.upstream_branch }}
           sleep 10;
+      - uses: ./.github/workflows/sub_action.yml
