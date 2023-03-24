@@ -19,4 +19,4 @@ jobs:
           echo "echo inside dispatch DownStream";
           echo upstream branch ${{ inputs.upstream_branch }}
           sleep 10;
-      - uses: ./.github/actions/sub_action.yml
+      - uses: ./.github/actions
