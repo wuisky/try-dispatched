@@ -9,10 +9,10 @@ jobs:
   build-chain:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          repository: wuisky/try-dispatch
-          ref:  ${{ inputs.upstream_branch }}
+      # - uses: actions/checkout@v3
+      #   with:
+      #     repository: wuisky/try-dispatch
+      #     ref:  ${{ inputs.upstream_branch }}
       - name: "echo inside this repo"
         run: |
           ls;
@@ -20,4 +20,4 @@ jobs:
           echo upstream branch ${{ inputs.upstream_branch }}
           sleep 10;
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/sub_actions/action.yml
+      - uses: ./.github/actions/sub_actions
