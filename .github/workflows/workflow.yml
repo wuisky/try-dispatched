@@ -9,10 +9,10 @@ jobs:
   build-chain:
     runs-on: ubuntu-latest
     steps:
-      # - uses: actions/checkout@v3
-      #   with:
-      #     repository: wuisky/try-dispatch
-      #     ref:  ${{ inputs.upstream_branch }}
+      - uses: actions/checkout@v3
+        with:
+          repository: wuisky/try-dispatch
+          ref:  ${{ inputs.upstream_branch }}
       - name: "echo inside this repo"
         run: |
           ls;
